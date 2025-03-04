@@ -1,0 +1,34 @@
+Project 3 from ESC180: Semantic Similarity Project
+Professor: Michael Guerzhoy
+
+This project focuses on answering “Synonym Questions” similar to those found on the Test of English as a Foreign Language (TOEFL):
+
+1. vexed
+(a) annoyed
+(b) amused
+(c) frightened
+(d) excited
+
+Given a target word and several possible synonyms, the system picks the choice whose meaning is closest to the target word. To accomplish this, words, taken from a reference like a book, are associated with a semantic descriptor vector, where each entry indicates how many sentences contain both that word and another. By comparing these vectors using the cosine similarity formula — essentially measuring the angle between the “vectors” of co-occurrence counts — I approximate the degree of similarity between the meaning of two words.
+
+For instance, if “man” co-occurs with “i” in three sentences, the entry for “i” in “man”’s descriptor vector is 3. In comparing words like “man” and “liver,” I only consider keys both share (such as “i”) to find their dot product and scale by each vector’s magnitude. 
+
+When reading a reference text, punctuation is removed, text is converted to lowercase, and sentences are delimited by periods (.), exclamation marks (!), or question marks (?). Different morphological forms (e.g., “believe” vs. “believes”) are treated as separate words, and any zero entries remain implicit in the dictionaries. Using this approach, the program can then compute the semantic similarity for each potential synonym and select the one with the highest score.
+
+Given reference_swannsway.txt, reference_warandpeace.txt, and reference_prideandprejudice.txt, the code is able to correctly answer 70% of the example questions provided in testlist.txt.
+
+Note that the structure of each line in the testlist.txt file goes like this:
+
+draw paint walk paint
+
+where draw is the question word and the following words are the possible answers. The last word is the correct answer and is not considered an additional possible answer.
+
+
+
+
+
+
+
+
+
+
