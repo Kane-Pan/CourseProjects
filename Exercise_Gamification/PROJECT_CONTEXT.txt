@@ -1,0 +1,20 @@
+Project 1 from ESC180: Exercise Gamification
+Professor: Michael Guerzhoy
+
+This project simulates a gamified exercise tracking app that encourages users to engage in physical activities by 
+awarding "stars" and tracking health points and hedons (fun points). The user can perform three activities—running, 
+carrying textbooks, or resting—each of which contributes differently to their health and enjoyment. 
+
+Running grants 3 health points per minute for up to 180 minutes and 1 health point per minute thereafter.
+Carrying textbooks always provides 2 health points per minute. 
+Resting does not contribute to health but allows the user to recover from fatigue. 
+
+The system models hedonic rewards based on whether the user is tired or not:
+
+Running grants 2 hedons per minute for the first 10 minutes (if the user is not tired) and -2 hedons per minute afterward
+Carrying textbooks provides 1 hedon per minute for the first 20 minutes and -1 hedon per minute after that. 
+If a star is offered for an activity, and the user engages in it immediately, they receive an additional 3 hedons per minute for up to 10 minutes. 
+However, offering too many stars in a short period (three within two hours) causes the user to lose interest, preventing further hedon rewards from stars. 
+
+The simulation consists of a sequence of operations where activities are performed, stars are offered, 
+and the system is queried for the user’s current health points, hedons, and the most rewarding activity for a given moment.
