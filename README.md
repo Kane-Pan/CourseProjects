@@ -2,7 +2,7 @@ This folder is a collection of the projects I have completed for my current cour
 
 Project 1: Gamification (in Python)
 
-Project 2: Gomoku Computer Player (in Python)
+Project 2: Gomoku AI Player (in Python)
 
 Project 3: Semantic Similarity Identifier (in Python)
 
