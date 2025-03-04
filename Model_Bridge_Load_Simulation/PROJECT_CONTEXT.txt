@@ -1,8 +1,16 @@
 Project from CIV102: Model Bridge Failure Load Simulation
 Professor: Evan Bentz
 
-This code was written for the final bridge project in CIV102, where my team had to build a bridge out of MatBoard and predict how much loading it can support before failure. To do this, I wrote this code, which takes in the cross section of the bridge and its length and then returns the under what kind of failure the bridge will fail.
+This code was written for the final bridge project in CIV102, where my team had to build a bridge out of 
+MatBoard and predict how much loading it can support before failure. To do this, I wrote this code, which 
+takes in the cross section of the bridge and its length and then returns the under what kind of failure the 
+bridge will fail.
 
-Our bridge had three different cross-sections: one for where the Bending Moment was the highest, one for where the Shear Force was the highest, and the main design for the areas in between. The Bridge_FinalDesignPlots.mlx code takes in the parameters given in the other code for each cross-section, and plots the shear force and bending moment diagram across out final bridge design. It also returns what kind of failure the bridge will succumb to and at what loading.
+Our bridge had three different cross-sections: one for where the Bending Moment was the highest, one for 
+where the Shear Force was the highest, and the main design for the areas in between. 
+The Bridge_FinalDesignPlots.mlx code takes in the parameters given in the other code for each cross-section, 
+and plots the shear force and bending moment diagram across out final bridge design. It also returns what kind of 
+failure the bridge will succumb to and at what loading.
 
-Our estimation using this code was 800N of maximum loading which was 85% accurate to the real load our bridge failed at after testing, which was 650N.
+Our estimation using this code was 800N of maximum loading which was 85% accurate to the real load our bridge failed at 
+after testing, which was 650N.
