@@ -1,0 +1,16 @@
+Project 2 from ESC180: Gomoku AI Player
+Professor: Michael Guerzhoy
+
+This project implements a simple AI engine for the board game Gomoku, played on a board size of your choosing. The game involves two players—one playing with black stones and the other with white stones—who take turns placing stones on an empty board. The objective is to form a sequence of five stones in a row, either horizontally, vertically, or diagonally. 
+
+The AI always plays as black and moves first, selecting its moves by maximizing a scoring function that evaluates potential winning sequences. The board is represented as a 2D list, where each square contains either "b" for a black stone, "w" for a white stone, or " " for an empty space. The AI determines move quality by identifying sequences of stones in four possible directions: left-to-right (0,1), top-to-bottom (1,0), upper-left to lower-right (1,1), and upper-right to lower-left (1,-1). These sequences are further classified as open, semi-open, or closed, depending on whether additional stones can be placed to extend them. 
+
+The AI uses these classifications of rows to determine where to put its piece. For example, if it detects a semi-open row of 2 and an open row of 3 for the opponent, the AI will always choose to block the open row of 3 to avoid an unavoidable defeat on the next move (an open row of 4 means two ways to create a row of 5, making it impossible to block both sides in one move).
+
+The code assumes that the user input is valid. i.e. "w" , "b" , " ", and an integer within the size of the board.
+
+
+
+
+
+
