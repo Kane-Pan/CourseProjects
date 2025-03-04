@@ -1,0 +1,14 @@
+Project 1 from ESC190: Word Autocompleter
+Professor: Michael Guerzhoy
+
+This project implements an efficient autocomplete system that retrieves the most relevant terms based on a given query string. The input consists of a file containing a large number of terms, each associated with an importance weight. 
+
+The goal is to quickly return the top-ranked terms that match the query. Matching is case-sensitive and considers only prefix matches—for example, "Eng" matches "EngSci" but not "engaged", and "Sci" matches "Science" but not "EngSci". To optimize performance, the system first sorts all terms in lexicographic order and reuses this sorted list for multiple queries. 
+
+For each query, a binary search is used to locate the first and last occurrences of matching terms in the sorted list. Once identified, the matching terms are sorted by weight, and the top results are returned.
+
+The main.c file currently is setup to take in cities.txt and take in the weights of each of the cities listed in a format like:
+
+14608512	Shanghai, China
+
+Where the number represents its weight and the City is shown on the right. main.c will read through all of it and allow you to input a query string that will be matched with a list of cities in decreasing order of weight that start with the input.
