@@ -9,5 +9,3 @@ Project 3: Model Bridge Failure Load Evaluator (in MATLAB)
 Project 4: Semantic Similarity Identifier (in Python)
 
 Project 5: Word Auto Completer (in C)
-
-Project 6: AI Lego Classifier (with PyTorch)
