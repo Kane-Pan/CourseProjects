@@ -10,4 +10,4 @@ Project 4: Semantic Similarity Identifier (in Python)
 
 Project 5: Word Auto Completer (in C)
 
-
+Project 6: AI Lego Classifier (with PyTorch)
